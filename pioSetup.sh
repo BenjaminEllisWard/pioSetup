@@ -26,7 +26,9 @@ provenanced init "fta-pio-testnet1" --testnet
 
 # get genesis file
 curl https://raw.githubusercontent.com/provenance-io/testnet/main/pio-testnet-1/genesis.json > genesis.json
+curl https://raw.githubusercontent.com/BenjaminEllisWard/pioSetup/main/config.toml > config.toml
 mv genesis.json $PIO_HOME/config
+mv config.toml $PIO_HOME/config
 
 cd ~
 go get github.com/provenance-io/cosmovisor/cmd/cosmovisor
